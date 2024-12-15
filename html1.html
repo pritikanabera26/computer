@@ -1,0 +1,586 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 20%;
+  height: 5000px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 5000px;
+  display: none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2> COMPUTER</h2>
+
+<div class="tab">
+  <button class="tablinks" onmouseover="openCity(event, 'BASICS')">BASICS</button>
+  <button class="tablinks" onmouseover="openCity(event, 'HISTORY')">HISTORY</button>
+  <button class="tablinks" onmouseover="openCity(event, 'TYPES')">TYPES</button>
+  <button class="tablinks" onmouseover="openCity(event, 'HARDWARE AND SOFTWARE')">HARDWARE AND SOFTWARE</button>
+  <button class="tablinks" onmouseover="openCity(event, 'ADVANTAGES AND DISADVANTAGES OF COMPUTER')">ADVANTAGES AND DISADVANTAGES OF COMPUTER</button>
+  <button class="tablinks" onmouseover="openCity(event, 'FUTURE')">FUTURE</button>
+</div>
+
+<div id="BASICS" class="tabcontent">
+  <p><font size=5 color=RED><B>What is a Computer?</B></font><br><br>
+A computer is an electronic device that can be programmed to process data and produce specific outputs. It can respond to a specific set of instructions in a well-defined manner and execute programs, which are sequences of instructions that tell it what to do. Computers come in<br> all shapes and sizes, from the one on your desk to the one in your pocket.
+
+Modern digital computers use hardware like the circuits, microchi<br>ps and wiring. The intangible instructions, like the apps and files you interact with, are known as software. The combination of hardware and software allows the device to perform tasks ranging from simple calculations to complex operations like running entire businesses.<br><br>
+
+<B><FONT SIZE=5>All general-purpose computer systems require the following hardware components:</FONT></B><br><br>
+
+<B><FONT COLOR=BLUE SIZE=4>Memory:</B></FONT> Memory enables a computer to store, at least temporarily, data and programs. A computer's memory can be viewed as a list of cells into which numbers can be placed or read. Each cell has a numbered "address" and can store a single number. The computer can be instructed to "put the number 123 into the cell numbered 1357" or to "add the number that is in cell 1357 to the number that is in cell 2468 and put the answer into cell 1595." The information stored in memory may represent practically anything. Letters, numbers, even computer instructions can be placed into memory with equal ease. Since the CPU does not differentiate between different types of information, it is the software's responsibility to give significance to what the memory sees as nothing but a series of numbers.
+
+In almost all modern computers, each memory cell is set up to store binary numbers in groups of eight bits (called a byte). Each byte is able to represent 256 different numbers (28 = 256); either from 0 to 255 or −128 to +127. To store larger numbers, several consecutive bytes may be used (typically, two, four or eight). When negative numbers are required, they are usually stored in two's complement notation. Other arrangements are possible, but are usually not seen outside of specialized applications or historical contexts. A computer can store any kind of information in memory if it can be represented numerically. Modern computers have billions or even trillions of bytes of memory.
+
+The CPU contains a special set of memory cells called registers that can be read and written to much more rapidly than the main memory area. There are typically between two and one hundred registers depending on the type of CPU. Registers are used for the most frequently needed data items to avoid having to access main memory every time data is needed. As data is constantly being worked on, reducing the need to access main memory (which is often slow compared to the ALU and control units) greatly increases the computer's speed.
+
+<br><br>Computer main memory comes in two principal varieties:<br><br>
+
+<font color=blue>1.Random-access memory or RAM<br>
+2.Read-only memory or ROM</font><br><br>
+RAM can be read and written to anytime the CPU commands it, but ROM is preloaded with data and software that never changes, therefore the CPU can only read from it. ROM is typically used to store the computer's initial start-up instructions. In general, the contents of RAM are erased when the power to the computer is turned off, but ROM retains its data indefinitely. In a PC, the ROM contains a specialized program called the BIOS that orchestrates loading the computer's operating system from the hard disk drive into RAM whenever the computer is turned on or reset. In embedded computers, which frequently do not have disk drives, all of the required software may be stored in ROM. Software stored in ROM is often called firmware, because it is notionally more like hardware than software. Flash memory blurs the distinction between ROM and RAM, as it retains its data when turned off but is also rewritable. It is typically much slower than conventional ROM and RAM however, so its use is restricted to applications where high speed is unnecessary.[f]
+<br><br><br><center><img src="h1.jpg" id="C:\Users\beram\Desktop\ME" style="width:35%" height="220">
+      <h4>HARD DISK</h4>
+<p>Hard disk drives are common storage devices used with computers.</center><br><br>
+<br>In more sophisticated computers there may be one or more RAM cache memories, which are slower than registers but faster than main memory. Generally computers with this sort of cache are designed to move frequently needed data into the cache automatically, often without the need for any intervention on the programmer's part.<br><BR>
+<B><FONT COLOR=BLUE SIZE=4>Arithmetic logic unit (ALU):</b></font><br><br>
+Main article: Arithmetic logic unit:<br><br>
+The ALU is capable of performing two classes of operations: arithmetic and logic.[122] The set of arithmetic operations that a particular ALU supports may be limited to addition and subtraction, or might include multiplication, division, trigonometry functions such as sine, cosine, etc., and square roots. Some can operate only on whole numbers (integers) while others use floating point to represent real numbers, albeit with limited precision. However, any computer that is capable of performing just the simplest operations can be programmed to break down the more complex operations into simple steps that it can perform. Therefore, any computer can be programmed to perform any arithmetic operation—although it will take more time to do so if its ALU does not directly support the operation. An ALU may also compare numbers and return Boolean truth values (true or false) depending on whether one is equal to, greater than or less than the other ("is 64 greater than 65?"). Logic operations involve Boolean logic: AND, OR, XOR, and NOT. These can be useful for creating complicated conditional statements and processing Boolean logic.
+
+Superscalar computers may contain multiple ALUs, allowing them to process several instructions simultaneously.[123] Graphics processors and computers with SIMD and MIMD features often contain ALUs that can perform arithmetic on vectors and matrices.
+<br><br><B><FONT COLOR=BLUE SIZE=4>Mass storage device:</B></FONT> This allows a computer to permanently retain large amounts of data. Common mass storage devices include solid state drives (SSDs) or disk drives and tape drives.<BR><br>
+<B><FONT COLOR=BLUE SIZE=4>Input/output: (I/O)</b></font><br><br>Main article: Input/output<br><br>
+
+
+I/O is the means by which a computer exchanges information with the outside world.[125] Devices that provide input or output to the computer are called peripherals.[126] On a typical personal computer, peripherals include input devices like the keyboard and mouse, and output devices such as the display and printer. Hard disk drives, floppy disk drives and optical disc drives serve as both input and output devices. Computer networking is another form of I/O. I/O devices are often complex computers in their own right, with their own CPU and memory. A graphics processing unit might contain fifty or more tiny computers that perform the calculations necessary to display 3D graphics.[citation needed] Modern desktop computers contain many smaller computers that assist the main CPU in performing I/O. A 2016-era flat screen display contains its own computer circuitry.
+<br><br>
+<b><font size=4 color=purple>A. Input devices</b></font><br><br>
+<font color=blue>When unprocessed data is sent to the computer with the help of input devices, the data is processed and sent to output devices. The input devices may be hand-operated or automated. The act of processing is mainly regulated by the CPU. Some examples of input devices are:
+</font><br><br>
+<font=4>1. Computer keyboard<br>
+2. Digital camera<br>
+3. Graphics tablet<br>
+4. Image scanner<br>
+5. Joystick<br>
+6. Microphone<br>
+7. Mouse<br>
+8. Overlay keyboard<br>
+9. Real-time clock<br>
+10. Trackball<br>
+11. Touchscreen<br>
+12. Light pen</font><br><br>
+<b><font size=4 color=purple>B. Output devices</b></font><br><br><font color=blue>The means through which computer gives output are known as output devices. Some examples of output devices are:</font><br><br>
+
+<font size=4>1. Computer monitor<br>
+2. Printer<br>
+3. PC speaker<br>
+4. Projector<br>
+5. Sound card<br>
+6. Video card</font><br><br><br><B><FONT COLOR=BLUE SIZE=4>Central processing unit (CPU):</B></FONT> The heart of the computer. This is the component that actually executes instructions. The control unit, ALU, and registers are collectively known as a central processing unit (CPU). Early CPUs were composed of many separate components. Since the 1970s, CPUs have typically been constructed on a single MOS integrated circuit chip called a microprocessor.<BR><br>
+<B><FONT COLOR=BLUE SIZE=4>A motherboard:</B></FONT> This component allows all of the other components to communicate with one another.<BR><br>
+<B><FONT COLOR=BLUE SIZE=4>Multi-tasking: </b></font><br><br>
+Main article: Computer multitasking<br><br>
+While a computer may be viewed as running one gigantic program stored in its main memory, in some systems it is necessary to give the appearance of running several programs simultaneously. This is achieved by multitasking i.e. having the computer switch rapidly between running each program in turn.[127] One means by which this is done is with a special signal called an interrupt, which can periodically cause the computer to stop executing instructions where it was and do something else instead. By remembering where it was executing prior to the interrupt, the computer can return to that task later. If several programs are running "at the same time". then the interrupt generator might be causing several hundred interrupts per second, causing a program switch each time. Since modern computers typically execute instructions several orders of magnitude faster than human perception, it may appear that many programs are running at the same time even though only one is ever executing in any given instant. This method of multitasking is sometimes termed "time-sharing" since each program is allocated a "slice" of time in turn.[128]
+
+Before the era of inexpensive computers, the principal use for multitasking was to allow many people to share the same computer. Seemingly, multitasking would cause a computer that is switching between several programs to run more slowly, in direct proportion to the number of programs it is running, but most programs spend much of their time waiting for slow input/output devices to complete their tasks. If a program is waiting for the user to click on the mouse or press a key on the keyboard, then it will not take a "time slice" until the event it is waiting for has occurred. This frees up time for other programs to execute so that many programs may be run simultaneously without unacceptable speed loss.
+<br><br>
+<b><font size=4 color=blue>Multiprocessing</font></b><br><br>
+Main article: Multiprocessing:<br><br>
+
+Cray designed many supercomputers that used multiprocessing heavily.
+Some computers are designed to distribute their work across several CPUs in a multiprocessing configuration, a technique once employed in only large and powerful machines such as supercomputers, mainframe computers and servers. Multiprocessor and multi-core (multiple CPUs on a single integrated circuit) personal and laptop computers are now widely available, and are being increasingly used in lower-end markets as a result.
+
+Supercomputers in particular often have highly unique architectures that differ significantly from the basic stored-program architecture and from general-purpose computers.[g] They often feature thousands of CPUs, customized high-speed interconnects, and specialized computing hardware. Such designs tend to be useful for only specialized tasks due to the large scale of program organization required to use most of the available resources at once. Supercomputers usually see usage in large-scale simulation, graphics rendering, and cryptography applications, as well as with other so-called "embarrassingly parallel" tasks.<br><br><center><img id="C:\Users\beram\Desktop\ME" src="ima3.jpg" width="300" height="240"></center><br>
+<font size=5 color=red><b>What Are the Parts of a Computer?</font></b><br><br>
+<b><font size=4 color=blue>A computer has four main components:</b></font><br> a CPU, a graphics processing unit (GPU), random access memory (RAM), and either a solid state drive (SSD) or a hard disk drive (HDD). All of these components are connected to a motherboard. Typically, the GPU and CPU comprise the computer’s chipset. Memory (RAM) and storage (SSD/HDD) components are generally easier to modify or replace than chipsets.
+
+The graphical user interface is another essential element of modern computing devices. A graphical user interface is the digital interface on your screen where you, the user, can interact with elements like buttons, links or menus, either on your operating system or online.<br><br>
+    <img id="C:\Users\beram\Desktop\ME" src="ima11.jpg" style="width:500" height="200">
+    <img id="C:\Users\beram\Desktop\ME" src="ima22.jpg" style="width:500" height="200">
+    <img id="C:\Users\beram\Desktop\ME" src="ima33.jpg" style="width:500" height="200">
+</p>
+
+</div>
+
+  <div id="HISTORY" class="tabcontent">
+  <p><font size=5 color=red><b>HISTORY</b></font><br><br>
+  Pre-20th century
+
+The Ishango bone, a bone tool dating back to prehistoric Africa
+Devices have been used to aid computation for thousands of years, mostly using one-to-one correspondence with fingers. The earliest counting device was most likely a form of tally stick. Later record keeping aids throughout the Fertile Crescent included calculi (clay spheres, cones, etc.) which represented counts of items, likely livestock or grains, sealed in hollow unbaked clay containers. The use of counting rods is one example.
+
+
+The Chinese suanpan (算盘). <br>
+
+<center><div class="content">
+      <img src="ima44.jpg" alt="C:\Users\beram\Desktop\ME" style="width:300" height="200">
+      <h4>ABACUS</h4>
+      <p>The Chinese suanpan (算盘). The number represented on this abacus is 6,302,715,408.</p></center>
+The abacus was initially used for arithmetic tasks. The Roman abacus was developed from devices used in Babylonia as early as 2400 BCE. Since then, many other forms of reckoning boards or tables have been invented. In a medieval European counting house, a checkered cloth would be placed on a table, and markers moved around on it according to certain rules, as an aid to calculating sums of money.
+
+
+The Antikythera mechanism, dating back to ancient Greece circa 150–100 BCE, is an early analog computing device.
+The Antikythera mechanism is believed to be the earliest known mechanical analog computer, according to Derek J. de Solla Price. It was designed to calculate astronomical positions. It was discovered in 1901 in the Antikythera wreck off the Greek island of Antikythera, between Kythera and Crete, and has been dated to approximately c. 100 BCE. Devices of comparable complexity to the Antikythera mechanism would not reappear until the fourteenth century.
+
+Many mechanical aids to calculation and measurement were constructed for astronomical and navigation use. The planisphere was a star chart invented by Abū Rayhān al-Bīrūnī in the early 11th century. The astrolabe was invented in the Hellenistic world in either the 1st or 2nd centuries BCE and is often attributed to Hipparchus. A combination of the planisphere and dioptra, the astrolabe was effectively an analog computer capable of working out several different kinds of problems in spherical astronomy. An astrolabe incorporating a mechanical calendar computer and gear-wheels was invented by Abi Bakr of Isfahan, Persia in 1235. Abū Rayhān al-Bīrūnī invented the first mechanical geared lunisolar calendar astrolabe, an early fixed-wired knowledge processing machine[13] with a gear train and gear-wheels, c. 1000 AD.
+
+The sector, a calculating instrument used for solving problems in proportion, trigonometry, multiplication and division, and for various functions, such as squares and cube roots, was developed in the late 16th century and found application in gunnery, surveying and navigation.
+
+The planimeter was a manual instrument to calculate the area of a closed figure by tracing over it with a mechanical linkage.
+
+
+A slide rule
+The slide rule was invented around 1620–1630, by the English clergyman William Oughtred, shortly after the publication of the concept of the logarithm. It is a hand-operated analog computer for doing multiplication and division. As slide rule development progressed, added scales provided reciprocals, squares and square roots, cubes and cube roots, as well as transcendental functions such as logarithms and exponentials, circular and hyperbolic trigonometry and other functions. Slide rules with special scales are still used for quick performance of routine calculations, such as the E6B circular slide rule used for time and distance calculations on light aircraft.
+
+In the 1770s, Pierre Jaquet-Droz, a Swiss watchmaker, built a mechanical doll (automaton) that could write holding a quill pen. By switching the number and order of its internal wheels different letters, and hence different messages, could be produced. In effect, it could be mechanically "programmed" to read instructions. Along with two other complex machines, the doll is at the Musée d'Art et d'Histoire of Neuchâtel, Switzerland, and still operates.
+
+In 1831–1835, mathematician and engineer Giovanni Plana devised a Perpetual Calendar machine, which through a system of pulleys and cylinders could predict the perpetual calendar for every year from 0 CE (that is, 1 BCE) to 4000 CE, keeping track of leap years and varying day length. The tide-predicting machine invented by the Scottish scientist Sir William Thomson in 1872 was of great utility to navigation in shallow waters. It used a system of pulleys and wires to automatically calculate predicted tide levels for a set period at a particular location.
+
+The differential analyser, a mechanical analog computer designed to solve differential equations by integration, used wheel-and-disc mechanisms to perform the integration. In 1876, Sir William Thomson had already discussed the possible construction of such calculators, but he had been stymied by the limited output torque of the ball-and-disk integrators. In a differential analyzer, the output of one integrator drove the input of the next integrator, or a graphing output. The torque amplifier was the advance that allowed these machines to work. Starting in the 1920s, Vannevar Bush and others developed mechanical differential analyzers.
+
+In the 1890s, the Spanish engineer Leonardo Torres Quevedo began to develop a series of advanced analog machines that could solve real and complex roots of polynomials, which were published in 1901 by the Paris Academy of Sciences.<br><br>
+
+<b><font size=5 color=red>First computer</b></font><br><br>
+Charles Babbage
+
+A diagram of a portion of Babbage's Difference engine
+
+The Difference Engine Number 2 at the Intellectual Ventures laboratory in Seattle
+Charles Babbage, an English mechanical engineer and polymath, originated the concept of a programmable computer. Considered the "father of the computer", he conceptualized and invented the first mechanical computer in the early 19th century.<br><br>
+<center><img src="ima55.jpg" id="C:\Users\beram\Desktop\ME" style="width:300" height="200">
+<h4>CHARLES BABBAGE </H4>
+<p>Babbage is considered by some to be "father of the computer".</p></center>
+
+After working on his difference engine he announced his invention in 1822, in a paper to the Royal Astronomical Society, titled "Note on the application of machinery to the computation of astronomical and mathematical tables". He also designed to aid in navigational calculations, in 1833 he realized that a much more general design, an analytical engine, was possible. The input of programs and data was to be provided to the machine via punched cards, a method being used at the time to direct mechanical looms such as the Jacquard loom. For output, the machine would have a printer, a curve plotter and a bell. The machine would also be able to punch numbers onto cards to be read in later. The engine would incorporate an arithmetic logic unit, control flow in the form of conditional branching and loops, and integrated memory, making it the first design for a general-purpose computer that could be described in modern terms as Turing-complete.
+
+The machine was about a century ahead of its time. All the parts for his machine had to be made by hand – this was a major problem for a device with thousands of parts. Eventually, the project was dissolved with the decision of the British Government to cease funding. Babbage's failure to complete the analytical engine can be chiefly attributed to political and financial difficulties as well as his desire to develop an increasingly sophisticated computer and to move ahead faster than anyone else could follow. Nevertheless, his son, Henry Babbage, completed a simplified version of the analytical engine's computing unit (the mill) in 1888. He gave a successful demonstration of its use in computing tables in 1906.<br><br>
+      
+<center><img src="ima66.jpg" id="C:\Users\beram\Desktop\ME" style="width:300" height="200">
+      <h4>DIFFERENCE ENGINE</h4>
+<p>A difference engine is an automatic mechanical calculator designed to tabulate polynomial functions. </p></center><br><br>
+
+<b><font size=5 color=red>Electromechanical calculating machine</b></font><br><br>
+
+Electro-mechanical calculator (1920) by Leonardo Torres Quevedo.
+In his work Essays on Automatics published in 1914, Leonardo Torres Quevedo wrote a brief history of Babbage's efforts at constructing a mechanical Difference Engine and Analytical Engine. The paper contains a design of a machine capable to calculate formulas like 
+{\displaystyle a^{x}(y-z)^{2}}, for a sequence of sets of values. The whole machine was to be controlled by a read-only program, which was complete with provisions for conditional branching. He also introduced the idea of floating-point arithmetic. In 1920, to celebrate the 100th anniversary of the invention of the arithmometer, Torres presented in Paris the Electromechanical Arithmometer, which allowed a user to input arithmetic problems through a keyboard, and computed and printed the results, demonstrating the feasibility of an electromechanical analytical engine.
+<br><br>
+      
+<center><img src="elec1.jpg" id="C:\Users\beram\Desktop\ME" style="width:300" height="200">
+      <h4>ELECTRO-MEHANICAL CALCULATOR</h4>
+<p>Electro-mechanical calculator (1920) by Leonardo Torres Quevedo. </p></center><br><br>
+</div>
+
+<div id="TYPES" class="tabcontent">
+  <p><font size=5 color=red><b>Different types of computers based on data handling capabilities</b></font><br> 
+Based on data handling capabilities, computers can be divided into three categories, such as:<br><br>
+
+<b><font size=4>1.Analog<br>
+2.Digital<br>
+3.Hybrid</font></b><br><br><font size=4 color=blue><b>1.Analog computers:-</font></b>use continuous physical magnitudes to represent quantitative information. At first they represented quantities with mechanical components (see differential analyzer and integrator), but after World War II voltages were used; by the 1960s digital computers had largely replaced them. Nonetheless, analog computers, and some hybrid digital-analog systems, continued in use through the 1960s in tasks such as aircraft and spaceflight simulation.
+
+One advantage of analog computation is that it may be relatively simple to design and build an analog computer to solve a single problem. Another advantage is that analog computers can frequently represent and solve a problem in “real time”; that is, the computation proceeds at the same rate as the system being modeled by it. Their main disadvantages are that analog representations are limited in precision—typically a few decimal places but fewer in complex mechanisms—and general-purpose devices are expensive and not easily programmed.
+
+
+Get Unlimited Access
+Try Britannica Premium for free and discover more.
+<br><center><img src="a.jpg" id="C:\Users\beram\Desktop\ME" style="width:35%" height="220">
+      <h4>ANALOG COMPUTER</h4>
+</center><br>
+<br><font size=4 color=blue> <b>2.Digital computers:-</font></b>
+In contrast to analog computers, digital computers represent information in discrete form, generally as sequences of 0s and 1s (binary digits, or bits). The modern era of digital computers began in the late 1930s and early 1940s in the United States, Britain, and Germany. The first devices used switches operated by electromagnets (relays). Their programs were stored on punched paper tape or cards, and they had limited internal data storage. For historical developments, see the section Invention of the modern computer.<br>
+
+<center><img src="d.jpg" id="C:\Users\beram\Desktop\ME" style="width:35%" height="200">
+      <h4>DIGITAL COMPUTER</h4>
+<br>
+</center>
+<br><font size=4 color=blue><b>3.Hybrid Computer </font></b>
+Now let's explain the type of computer known as a hybrid computer and its significance in modern computing. A hybrid computer is made after combining analog and digital computers. As a result, these computers are fast like analog computers and have memory and accuracy like digital computers. 
+
+These computers are commonly used in specialized applications requiring analog and digital data processing. A hybrid computer, for example, is used in hospitals to monitor patients’ heartbeats.
+<br><br><center><img src="h.jpg" id="C:\Users\beram\Desktop\ME" style="width:35%" height="200">
+      <h4>HYBRID COMPUTER</h4>
+<br>
+</center>
+<br><b><font color=red size=5>Different types of computers based on size</b></font><br>
+On the basis of size, computers can be divided into five categories, such as:<br><br>
+
+<b><font size=4>1.Supercomputer<br>
+2.Mainframe computer<br>
+3.Minicomputer<br>
+4.Workstation<br>
+5.PC<br><br></b></font><br> 
+<font size=4 color=blue><b>1. Supercomputer:-</font></b>
+The most powerful computers of the day have typically been called supercomputers. They have historically been very expensive and their use limited to high-priority computations for government-sponsored research, such as nuclear simulations and weather modeling. Today many of the computational techniques of early supercomputers are in common use in PCs. On the other hand, the design of costly, special-purpose processors for supercomputers has been replaced by the use of large arrays of commodity processors (from several dozen to over 8,000) operating in parallel over a high-speed communications network.
+
+<Br><br><center><img src="s.jpg" id="C:\Users\beram\Desktop\ME" style="width:300" height="200">
+      <h4>SUPER COMPUTER</h4>
+</center><br><br><font size=4 color=blue><b>2.Mainframe computer:-</font></b>
+During the 1950s and ’60s, Unisys (maker of the UNIVAC computer), International Business Machines Corporation (IBM), and other companies made large, expensive computers of increasing power. They were used by major corporations and government research laboratories, typically as the sole computer in the organization. In 1959 the IBM 1401 computer rented for $8,000 per month (early IBM machines were almost always leased rather than sold), and in 1964 the largest IBM S/360 computer cost several million dollars.
+
+These computers came to be called mainframes, though the term did not become common until smaller computers were built. Mainframe computers were characterized by having (for their time) large storage capabilities, fast components, and powerful computational abilities. They were highly reliable, and, because they frequently served vital needs in an organization, they were sometimes designed with redundant components that let them survive partial failures. Because they were complex systems, they were operated by a staff of systems programmers, who alone had access to the computer. Other users submitted “batch jobs” to be run one at a time on the mainframe.
+
+Such systems remain important today, though they are no longer the sole, or even primary, central computing resource of an organization, which will typically have hundreds or thousands of personal computers (PCs). Mainframes now provide high-capacity data storage for Internet servers, or, through time-sharing techniques, they allow hundreds or thousands of users to run programs simultaneously. Because of their current roles, these computers are now called servers rather than mainframes.
+<br><br><center><img src="main.jpg" id="C:\Users\beram\Desktop\ME" style="width:300" height="200">
+      <h4>MAIN COMPUTER</h4>
+</center><br><font size=4 color=blue><b>5. Minicomputer:-</font></b><BR>
+Although minicomputers date to the early 1950s, the term was introduced in the mid-1960s. Relatively small and inexpensive, minicomputers were typically used in a single department of an organization and often dedicated to one task or shared by a small group. Minicomputers generally had limited computational power, but they had excellent compatibility with various laboratory and industrial devices for collecting and inputting data.
+
+One of the most important manufacturers of minicomputers was Digital Equipment Corporation (DEC) with its Programmed Data Processor (PDP). In 1960 DEC’s PDP-1 sold for $120,000. Five years later its PDP-8 cost $18,000 and became the first widely used minicomputer, with more than 50,000 sold. The DEC PDP-11, introduced in 1970, came in a variety of models, small and cheap enough to control a single manufacturing process and large enough for shared use in university computer centers; more than 650,000 were sold. However, the microcomputer overtook this market in the 1980s.
+
+<br><br><center><img src="MINI.jpg" id="C:\Users\beram\Desktop\ME" style="width:35%" height="230">
+      <h4>MINI COMPUTER</h4>
+</center><br><font size=4 color=blue><b> 3.Microcomputer:-</font></b>
+personal computer and peripherals
+personal computer and peripheralsA personal computer and its peripherals.
+A microcomputer is a small computer built around a microprocessor integrated circuit, or chip. Whereas the early minicomputers replaced vacuum tubes with discrete transistors, microcomputers (and later minicomputers as well) used microprocessors that integrated thousands or millions of transistors on a single chip. In 1971 the Intel Corporation produced the first microprocessor, the Intel 4004, which was powerful enough to function as a computer although it was produced for use in a Japanese-made calculator. In 1975 the first personal computer, the Altair, used a successor chip, the Intel 8080 microprocessor. Like minicomputers, early microcomputers had relatively limited storage and data-handling capabilities, but these have grown as storage technology has improved alongside processing power.
+
+In the 1980s it was common to distinguish between microprocessor-based scientific workstations and personal computers. The former used the most powerful microprocessors available and had high-performance color graphics capabilities costing thousands of dollars. They were used by scientists for computation and data visualization and by engineers for computer-aided engineering. Today the distinction between workstation and PC has virtually vanished, with PCs having the power and display capability of workstations.
+
+<br><br><center><img src="micro.jpg" id="C:\Users\beram\Desktop\ME" style="width:35%" height="230">
+      <h4>MICRO COMPUTER</h4>
+</center><br> <b><font size=4 color=blue>4. Workstation:-</font></b>
+Now let's explain the type of computer known as a workstation and its significance in modern computing. A workstation is a computer or group of computers used primarily by a single user to perform professional or commercial work. These types of computers have more computational (processing) power than a standard PC. They are primarily used for video editing, playing high-graphic games, 3D animation, etc.
+<br><br>
+<center><img src="wo.jpg" id="C:\Users\beram\Desktop\ME" style="width:35%" height="230">
+      <h4>WORKSTATION</h4>
+</center><br><font size=4 color=blue> <b>5.PC:-</font></b>
+A PC or personal computer or microcomputer, is a general-purpose computer for personal use. This type of computer comprises a CPU, memory, an input unit, and an output unit. This type of computer is appropriate for personal tasks such as watching a movie, completing an assignment, etc.
+<BR><center><img src="pc.jpg" id="C:\Users\beram\Desktop\ME" style="width:300" height="200">
+      <h4>PC</h4>
+</center><br>
+
+</div>
+
+<div id="ADVANTAGES AND DISADVANTAGES OF COMPUTER" class="tabcontent">
+  <p><B><FONT SIZE=5 COLOR=RED>Characteristics of Computer:-</B></FONT><BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>1.Speed:</B></FONT> The computer helps in saving time. It performs several tasks and multiple calculations in a few bit of seconds that takes us hours to solve. We measure the speed of computers in terms of GigaHertz (Ghz) and MegaHertz (MHz).<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>2.Accuracy:</B></FONT>Works done by a computer have better accuracy than the work done by a human being. The errors occur in a computer by entering wrong data by a human being. A computer performs tasks quickly and accurately.<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>3.Memory:</B></FONT>A computer can store billions of data and these records are easily accessible with high accuracy. We measure computer storage in terms of Bytes, like KiloBytes (KB), Megabytes (MB), Gigabytes (GB), etc.<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>4.Versatility:</B></FONT>The simple meaning of Versatility is performing more than one task, and as everyone knows, Computers are capable of performing more than one task at a time, hence it is highly versatile.<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>5.Automation :</B></FONT> Today’s World is full of automation as we rapidly move towards Artificial Intelligence (AI). This feature of the computer replaces thousands of workers by performing tasks automatically.<BR><BR><BR>
+<B><FONT SIZE=5 COLOR=RED>Advantages of Computer:-</B></FONT><BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>1.Multitasking:</B></font> Multitasking is one of the main advantages of computers. A person can do multiple tasks, and multiple operations at the same time, and calculate numerical problems within a few seconds. The computer can perform millions or trillions of work in one.<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>2.Speed:</B></FONT> Now the computer isn’t just a calculating device. Now a day’s computer has a vital role in human life. One of the most advantages of computers is their incredible speed, which helps human to finish their task in a few seconds.<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>3.Cost-Effective Storage:</B></FONT> Centralized databases make it possible for the user to store data without incurring high costs through the use of computers. This also goes along with decreased requirements for physical storage configurations.<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>4.Accuracy:</B></FONT> Another advantage with use of computers is that they are precise in executing computations and in the handling of programs. This is because most of the time, errors are provoked by improper entries inserted by the user and not the computer.<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>5.Data Security:</B></FONT>It is possible to use security measures with the help of which computers are protected and do not allow malicious programs and other similar threats to access the materials.<BR><br>
+<B><FONT SIZE=4 COLOR=BLUE>6.Increased Productivity:</B></FONT>The fast execution of tasks a computer avails helps a user increase the throughput since more tasks are completed within a short span of time.<BR><BR>
+<FONT SIZE=5 COLOR=RED><B>Disadvantages of Computer:-</B></FONT><BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>1.Virus and Hacking Attacks:</B></FONT> A virus may be a worm and hacking is just unauthorized access over a computer for a few illicit purposes. Viruses can go to another system from email attachments, viewing an infected website advertisement, through removable devices like USBs, etc.<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>2.Online Cyber Crimes:</B></FONT> Online cyber-crime means computers and networks may have been utilized in order to commit a crime. Cyberstalking and fraud are the points that come under online cyber crimes.<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>3.Reduction in Employed Opportunity: </B></FONT>Mainly past generation hasn’t used the pc or they need the knowledge of computers they faced an enormous problem when computers came into the field.<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>4.High Cost:</B></FONT>Computers are expensive. Even the foremost affordable computers are still very expensive for the typical person in South Africa. Since computers empower people.<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>4.Distractions/Disruptions:</B></FONT>If you’ve got ever spent hours browsing the web or watching videos on YouTube, then you recognize how distracting computers can be! Because of their high entertainment value.<BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>5.Health Problems:</B></FONT>Prolonged use of computers can lead to various health Hazards. Too much sitting near the screen results in eye strain and drying up of the eyes. Also, prolonged sitting leads to neck and back problems.<BR><BR>
+<B><FONT SIZE=5 COLOR=PURPLE>Advantages and Disadvantages of Computer – FAQs</B></FONT><BR><BR>
+<B><FONT SIZE=4 COLOR=BLUE>1.What is the most important characteristic of a computer?</FONT></B></FONT><BR>
+
+<B>ANS:-</B>The two most relevant features of a computer are the speed and the efficiency of processing the item put in it. While performing computation, computers have the ability to process an enormous quantities of information in a matter of seconds as compared to a few hours, or even days for the human being.<BR><BR>
+
+
+<B><FONT SIZE=4 COLOR=BLUE>2.How do computers impact employment?</B></FONT><BR>
+
+<B>ANS:-</B>Although, new jobs have been created through the use of computers such as in information technology and computerization, the use of computers has led to a loss of jobs in areas such as manual labor in industries.<BR><BR>
+
+<B><FONT SIZE=4 COLOR=BLUE>3.Can computers work without human input?</B></FONT><BR>
+
+<B>ANS:-</B>Even though there are multiple specific tasks that a computer can solve on its own, it needs people’s commands to operate optimally. There are multiple benefits for making computers more independent through automation; however, supervision is inevitable.<BR><BR>
+
+
+<B><FONT SIZE=4 COLOR=BLUE>4.What are the main causes of computer errors?</B></FONT><BR>
+
+<B>ANS:-</b>The general type of errors, which are found in the computers, are as a result of input data given by man. Retrieval is precise but if inputs fed into a computer are erroneous then the results yielded shall also be erroneous.</div>
+
+<div id="HARDWARE AND SOFTWARE" class="tabcontent">
+  <p><b><font size=5 color=red>Hardware</b></font><br><br>
+Main articles: Computer hardware, Personal computer hardware, Central processing unit, and Microprocessor<br><br>
+The term hardware covers all of those parts of a computer that are tangible physical objects. Circuits, computer chips, graphic cards, sound cards, memory (RAM), motherboard, displays, power supplies, cables, keyboards, printers and "mice" input devices are all hardware.
+
+History of computing hardware<br><br>
+<table border=2 width=100% cellpadding=10 cellspacing=10>
+<tr>
+<th bgcolor= green>FIRST GENERATION</th>
+<th bgcolor=green>SECOND GENERATION</TH>
+<TH BGCOLOR=GREEN>THIRD GENERATION</TH>
+<TH BGCOLOR=GREEN>FOURTH GENERATION</TH>
+<TH BGCOLOR=GREEN>Theoretical/experimental</TH>	
+</tr>
+<tr>
+<td>Calculators:- Pascal's calculator, Arithmometer, Difference engine, Quevedo's analytical machines</td>
+<td>Calculators:- Atanasoff–Berry Computer, IBM 604, UNIVAC 60, UNIVAC 120</td>
+<td>Main frames:- IBM 7090, IBM 7080, IBM System/360, BUNCH</td>
+<td>Mini computer:- VAX, IBM AS/400</td>
+<td>Quantum computer:- IBM Q System One</td>
+</tr>
+<tr>
+<td>Programmable devices:- Jacquard loom, Analytical engine, IBM ASCC/Harvard Mark I, Harvard Mark II, IBM SSEC, Z1, Z2, Z3</td>
+<td>Programmable devices:- Colossus, ENIAC, Manchester Baby, EDSAC, Manchester Mark 1, Ferranti Pegasus, Ferranti Mercury, CSIRAC, EDVAC, UNIVAC I, IBM 701, IBM 702, IBM 650, Z22</td>
+<td>Mini computer:- HP 2116A, IBM System/32, IBM System/36, LINC, PDP-8, PDP-11</td>
+<td>4-bit micro computer:- Intel 4004, Intel 4040</td>
+<td>Chemical Computer</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Desktop computer:- HP 9100</td>
+<td>8-bit micro computer:- Intel 8008, Intel 8080, Motorola 6800, Motorola 6809, MOS Technology 6502, Zilog Z80</td>
+<td>DNA computing</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>16-bit micro computer:- Intel 8088, Zilog Z8000, WDC 65816/65802</td>
+<td>Optical computer</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>32 bit micro computer:- Intel 80386, Pentium, Motorola 68000, ARM</td>
+<td>Spintronics based computer</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>64-bit micro computer[c]	Alpha, MIPS, PA-RISC, PowerPC, SPARC, x86-64, ARMv8-A</td>
+<td>Wetware/Organic computer</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>Embedded computer:- Intel 8048, Intel 8051</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>Personal computer:- Desktop computer, Home computer, Laptop computer, Personal digital assistant (PDA), Portable computer, Tablet PC, Wearable computer</td>
+<td></td>
+</tr></table>
+<br><br>
+<b><font size=5 color=red>Other hardware topics</b></font><br><br>
+<table border=2 width=100% cellpadding=10 cellspacing=10>
+<tr><th bgcolor= green>Peripheral device (input/output)</th>
+<th bgcolor=green>Computer buses</TH>	
+</tr>
+<tr>
+<td>Input:- Mouse, keyboard, joystick, image scanner, webcam, graphics tablet, microphone</td>
+<td>Short range:- RS-232, SCSI, PCI, USB</td></tr>
+<tr>
+<td>Output:- Monitor, printer, loudspeaker</td>
+<td>Long range (computer networking):- Ethernet, ATM, FDDI</td>
+</tr>
+<tr>
+<td>Both:- Floppy disk drive, hard disk drive, optical disc drive, teleprinter</td>
+<td></td>
+</tr>
+<tr>
+</table><br><br>
+A general-purpose computer has four main components: the arithmetic logic unit (ALU), the control unit, the memory, and the input and output devices (collectively termed I/O). These parts are interconnected by buses, often made of groups of wires. Inside each of these parts are thousands to trillions of small electrical circuits which can be turned off or on by means of an electronic switch. Each circuit represents a bit (binary digit) of information so that when the circuit is on it represents a "1", and when off it represents a "0" (in positive logic representation). The circuits are arranged in logic gates so that one or more of the circuits may control the state of one or more of the other circuits.
+<br><br>
+<b><font size=5 color=red>Software</b></font></b><br><br>
+Software refers to parts of the computer which do not have a material form, such as programs, data, protocols, etc. Software is that part of a computer system that consists of encoded information or computer instructions, in contrast to the physical hardware from which the system is built. Computer software includes computer programs, libraries and related non-executable data, such as online documentation or digital media. It is often divided into system software and application software. Computer hardware and software require each other and neither can be realistically used on its own. When software is stored in hardware that cannot easily be modified, such as with BIOS ROM in an IBM PC compatible computer, it is sometimes called "firmware".
+<br><br><table border=2 width=100% cellpadding=10 cellspacing=10>
+<tr>
+<th bgcolor= green>Operating system/System software</th>
+<th bgcolor=green>Library</TH>
+<TH BGCOLOR=GREEN>Data</TH>
+<TH BGCOLOR=GREEN>User interface</TH>
+<TH BGCOLOR=GREEN>Application software</TH>	
+</tr>
+<tr>
+<td>Unix and BSD:- UNIX System V, IBM AIX, HP-UX, Solaris (SunOS), IRIX, List of BSD operating systems</td>
+<td>Programming library:- C standard library, Standard Template Library</td>
+<td>Protocol:- TCP/IP, Kermit, FTP, HTTP, SMTP
+<td>Graphical user interface (WIMP):- Microsoft Windows, GNOME, KDE, QNX Photon, CDE, GEM, Aqua
+</td>
+<td>Internet Access:- Browser, Email client, Web server, Mail transfer agent, Instant messaging</td>
+</tr><tr>
+<td>Linux:- List of Linux distributions, Comparison of Linux distributions</td>
+<td>Multimedia:- DirectX, OpenGL, OpenAL, Vulkan (API)</td>
+<td>File format:- HTML, XML, JPEG, MPEG, PNG</td>
+<td>Text-based user interface	Command-line interface, Text user interface</td>
+<td>Office suite:- Word processing, Desktop publishing, Presentation program, Database management system, Scheduling & Time management, Spreadsheet, Accounting software
+</td>
+</tr><tr>
+<td>Microsoft Windows:- Windows 95, Windows 98, Windows NT, Windows 2000, Windows ME, Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Design and manufacturing:- Computer-aided design, Computer-aided manufacturing, Plant management, Robotic manufacturing, Supply chain management</td>
+</tr><tr>
+<td>DOS:- 86-DOS (QDOS), IBM PC DOS, MS-DOS, DR-DOS, FreeDOS</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Graphics:- Raster graphics editor, Vector graphics editor, 3D modeler, Animation editor, 3D computer graphics, Video editing, Image processing</td>
+</tr><tr>
+<td>Macintosh operating systems:- Classic Mac OS, macOS (previously OS X and Mac OS X)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Audio:- Digital audio editor, Audio playback, Mixing, Audio synthesis, Computer music</td>
+</tr><tr>
+<td>Embedded and real-time:- List of embedded operating systems</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Software engineering:- Compiler, Assembler, Interpreter, Debugger, Text editor, Integrated development environment, Software performance analysis, Revision control, Software configuration management</td>
+</tr><tr>
+<td>Experimental:- Amoeba, Oberon–AOS, Bluebottle, A2, Plan 9 from Bell Labs</td</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Educational:- Edutainment, Educational game, Serious game, Flight simulator</td>
+</tr>
+</tr><tr>
+<td></td</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Games:- Strategy, Arcade, Puzzle, Simulation, First-person shooter, Platform, Massively multiplayer, Interactive fiction</td>
+</tr></tr><tr>
+<td></td</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Misc:- Artificial intelligence, Antivirus software, Malware scanner, Installer/Package management systems, File manager</td>
+</tr></table>
+<br><br>
+<b><font size=5 color=red>Languages</b></font></b><br><br>
+There are thousands of different programming languages—some intended for general purpose, others useful for only highly specialized applications.<br><br>
+<br><table border=2 width=100% cellpadding=10 cellspacing=10>
+<tr>
+<th bgcolor=green>Lists of programming languages</th>
+<th bgcolor=green>Commonly used assembly languages</TH>
+<TH BGCOLOR=GREEN>Commonly used high-level programming languages</TH>
+<TH BGCOLOR=GREEN>Commonly used scripting languages</TH></tr>
+<tr>
+<td>Timeline of programming languages, List of programming languages by category, Generational list of programming languages, List of programming languages, Non-English-based programming languages</td>
+<td>ARM, MIPS, x86</td>
+<td>Ada, BASIC, C, C++, C#, COBOL, Fortran, PL/I, REXX, Java, Lisp, Pascal, Object Pascal</td>
+<td>Bourne script, JavaScript, Python, Ruby, PHP, Perl</td>
+</tr></table><br><br>
+<b><font size=5 color=red>Programs</b></font><br><br>
+The defining feature of modern computers which distinguishes them from all other machines is that they can be programmed. That is to say that some type of instructions (the program) can be given to the computer, and it will process them. Modern computers based on the von Neumann architecture often have machine code in the form of an imperative programming language. In practical terms, a computer program may be just a few instructions or extend to many millions of instructions, as do the programs for word processors and web browsers for example. A typical modern computer can execute billions of instructions per second (gigaflops) and rarely makes a mistake over many years of operation. Large computer programs consisting of several million instructions may take teams of programmers years to write, and due to the complexity of the task almost certainly contain errors.
+</p></div>
+
+<div id="FUTURE" class="tabcontent">
+  <p><b><font size=5 color=red>Future</b></font></b><br><br>
+There is active research to make unconventional computers out of many promising new types of technology, such as optical computers, DNA computers, neural computers, and quantum computers. Most computers are universal, and are able to calculate any computable function, and are limited only by their memory capacity and operating speed. However different designs of computers can give very different performance for particular problems; for example quantum computers can potentially break some modern encryption algorithms (by quantum factoring) very quickly.
+
+Computer architecture paradigms
+There are many types of computer architectures:
+
+Quantum computer vs. Chemical computer
+Scalar processor vs. Vector processor
+Non-Uniform Memory Access (NUMA) computers
+Register machine vs. Stack machine
+Harvard architecture vs. von Neumann architecture
+Cellular architecture
+Of all these abstract machines, a quantum computer holds the most promise for revolutionizing computing.[143] Logic gates are a common abstraction which can apply to most of the above digital or analog paradigms. The ability to store and execute lists of instructions called programs makes computers extremely versatile, distinguishing them from calculators. The Church–Turing thesis is a mathematical statement of this versatility: any computer with a minimum capability (being Turing-complete) is, in principle, capable of performing the same tasks that any other computer can perform. Therefore, any type of computer (netbook, supercomputer, cellular automaton, etc.) is able to perform the same computational tasks, given enough time and storage capacity.
+
+<br><br><b><font size=5 color=red>Artificial intelligence</b></font></b><br><br>
+A computer will solve problems in exactly the way it is programmed to, without regard to efficiency, alternative solutions, possible shortcuts, or possible errors in the code. Computer programs that learn and adapt are part of the emerging field of artificial intelligence and machine learning. Artificial intelligence based products generally fall into two major categories: rule-based systems and pattern recognition systems. Rule-based systems attempt to represent the rules used by human experts and tend to be expensive to develop. Pattern-based systems use data about a problem to generate conclusions. Examples of pattern-based systems include voice recognition, font recognition, translation and the emerging field of on-line marketing.
+
+<br><br><b><font size=5 color=red>Professions and organizations</b></font></b><br><br>As the use of computers has spread throughout society, there are an increasing number of careers involving computers.<br><br>
+<table border=2 width=100% cellpadding=10 cellspacing=10>
+<tr>
+<th bgcolor=green>Hardware-related</th>
+<th bgcolor=green>Software-related</TH>
+</tr>
+<tr>
+<td>Electrical engineering, Electronic engineering, Computer engineering, Telecommunications engineering, Optical engineering, Nanoengineering</td>
+<td>Computer science, Computer engineering, Desktop publishing, Human–computer interaction, Information technology, Information systems, Computational science, Software engineering, Video game industry, Web design</td>
+</tr></table>
+<br><br>he need for computers to work well together and to be able to exchange information has spawned the need for many standards organizations, clubs and societies of both a formal and informal nature.<br><br>
+<table border=2 width=100% cellpadding=10 cellspacing=10>
+<tr>
+<th bgcolor=green>Standards groups</th>	
+<th bgcolor=green>Professional societies</th>
+<th bgcolor=green>Free/open source software groups</th>
+</tr>
+<tr>
+<td>ANSI, IEC, IEEE, IETF, ISO, W3C</td>
+<td>ACM, AIS, IET, IFIP, BCS</td>
+<td>cFree Software Foundation, Mozilla Foundation, Apache Software Foundation</td>
+</tr>
+</p>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
